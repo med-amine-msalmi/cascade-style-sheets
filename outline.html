@@ -5,38 +5,47 @@
   <meta charset="UTF-8">
   <title>CSS Outline Examples</title>
   <style>
+
     body {
       margin: 1.5rem;
       font-family: Arial, sans-serif;
     }
+
     section {
       margin-bottom: 2rem;
     }
-    /* 1) Simple outline using shorthand */
+
     .box1
     {
-        width: 150px;
-        height: 100px;
-        background: #d68e8e;
+       width: 150px;
+       height: 100px;
+       border-radius: 2px;
+       background: #d68e8e;
        border:1px solid rgb(0, 0, 0);
-       outline-color: green;
-       outline-style: dashed;
-       outline-width: 2px;
-       outline-offset: 10px;
+       outline: 2px solid green  ;
+       outline-offset: 2px;
     }
     /* 2) Dashed outline with offset */
     .box2 {
       width: 150px;
       height: 100px;
       background: #f0f0f0;
-      outline-width: 4px;
+      outline-width: 4px; 
+
       outline-style: dashed;
-      outline-color: #28a745;
+      outline-color: hsl(134, 61%, 41%);
       outline-offset: 6px;
     }
+    .debug:hover
+    {
+       padding:2px 9px;
+       outline: 4px solid rgba(173, 87, 87, 0.5);
+    }
+ 
 
     /* 3) Focus outline on a button */
     button {
+
       padding: 0.5em 1em;
       font-size: 1rem;
       background: #17a2b8;
@@ -57,11 +66,14 @@
       border-radius: 4px;
     }
     input:focus {
-      /* outline: none;
-      box-shadow: 0 0 0 3px rgba(255,0,0,0.5); */
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(212, 26, 26, 0.5); 
 
-      outline: 3px solid  Red;
-      outline-offset: 0px;
+
+        /*
+             outline: 3px solid  Red;
+            outline-offset: 0px;
+        */
 
     }
 
@@ -75,7 +87,7 @@
 
   <section>
     <h2>1) Simple Outline (Shorthand)</h2>
-    <div class="box1"></div>
+    <div class="box1" tabindex="0" ></div>
   </section>
 
   <section>
@@ -92,5 +104,10 @@
     <h2>4) Custom Input Focus (Removing Default Outline)</h2>
     <input type="text" placeholder="Focus me with Tab">
   </section>
+
+  <div class="debug">
+    <h1>This is  debugger box</h1>
+    <p>loreum loreum loreum loreum ipds loreum ipds loreum loreum ipds loreum </p>
+  </div>
 </body>
 </html>

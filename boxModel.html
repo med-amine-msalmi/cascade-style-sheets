@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin:1rem;
+    }
+
+.box{
+    color:aliceblue;
+    background-color: rgb(81, 77, 77);
+    padding:20px;
+    margin:20px 10px;
+    border:10px solid rgb(173, 52, 173);
+    width: 220px;
+}
+ .content{
+    box-sizing: content-box;
+ }
+ .border{
+    box-sizing: border-box;
+
+ }
+</style>
+</head>
+
+<body>
+    <!-- default box model  -->
+    <div class="box content">
+        <p >Content Box with total width :220(content) + 20*2(padding) + 10*2(border)  
+        </p>
+    </div>
+    
+    <!-- border box  -->
+    <div class="box border">
+        <p>
+            Border Box Model with content with=220 - 20*2 - 10*2 
+        </p>
+    </div>
+</body>
+</html>
