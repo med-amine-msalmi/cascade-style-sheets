@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Posoition</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <h1>CSS Position Property Demo</h1>
+
+    <section>
+        <h2>1) Static</h2>
+        <p class="static">This is pragraph is <strong>static</strong>(the default).It allows normal document flow.</p>
+    </section>
+    
+      <p class="fixed">This is box is <strong>fixed</strong> on the top right corner of viewport</p>
+    <section>
+        <h2>3) Relative</h2>
+        <p class="relative">
+           This paragraph is <strong>relative</strong>. It’s offset from its normal position by top/left.
+        </p>
+    </section>
+    <section>
+        <h2>4) Absolute</h2>
+        <div class="parent">
+            <p>This container is relative positioned </p>
+            <p class="absolute">
+                This is pragraph is <strong>absolute</strong> positioned at bottom-right of its parent.
+            </p>
+        </div>
+
+    </section>
+    <section>
+        <h2>5) Sticky</h2>
+        <p class="sticky">this header is sticky</p>
+    </section>
+</body>
+</html>
