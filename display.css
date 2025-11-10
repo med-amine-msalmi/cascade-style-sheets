@@ -1,0 +1,39 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+  section { margin-bottom: 2rem; }
+
+  /* Block Example */
+  .demo-block {
+    display: block;
+    background: #cce5ff;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Inline Example */
+  .demo-inline {
+    display: inline;
+    background: #d4edda;
+    padding: 0.2rem 0.4rem;
+  }
+
+  /* Inline-Block Example */
+  .demo-inline-block {
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    background: #f8d7da;
+    margin: 0.5rem;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  /* Labels */
+  h2 { margin-bottom: 0.5rem; }
+  p.note { font-size: 0.9rem; color: #555; margin-top: 0.5rem; }
